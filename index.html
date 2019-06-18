@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        
+        <title>Tip Calculator</title>
+        <link href="tip.css" rel="stylesheet">
+            <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open Sans">
+
+    </head>
+    
+    <body>
+        
+        <div id="container" >
+            
+            <h1>Tip Calculator</h1>
+            <div id="calculate">
+                
+                <form>
+                    
+                    <label>
+                        How much was your bill?<br>
+                        $<input type="text" id="billAmount"><br>
+                    </label>
+                    
+                    
+                    <label>
+                        How was the service?<br>
+                        
+                        <select id="serviceQuality">
+                            
+                            <option selected disabled value="0"> Choose an option </option>
+                            <option value="0.3"> Outstanding </option>
+                            <option value="0.2"> Good </option>
+                            <option value="0.15"> Okay </option>
+                            <option value=".1"> Bad </option>
+                            <option value="0.05"> Terrible</option>
+                            
+                        </select>
+                    </label>
+                    
+                    <label>
+                        How many people are sharing the bill?<br>
+                        <input type= "text" id="totalPeople"> People
+                    </label>                    
+                    
+                    <button type="button" id="calculateTipButton">Calculate</button>
+                </form>
+                
+            </div><!-- calculate Ending -->
+        
+            <div id="totalTip">
+                    
+                <sup>$</sup><span id="tip"> 0.00 </span>
+                <small id="each">each</small> 
+                    
+            </div> <!-- totalTip Ending -->
+        
+        </div><!-- Container Ending -->
+        
+        
+        <!-- Scripting -->
+        <script src="tip.js" type="text/javascript"></script>
+        
+    </body>
+    
+</html>
